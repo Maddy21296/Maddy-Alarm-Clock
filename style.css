@@ -1,0 +1,156 @@
+/*  GLobal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: rgb(59, 19, 240);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+}
+select {
+  appearance: none;
+  outline: black;
+  background-color: wheat;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  color: #0e141b;
+  border-color: black;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+ 
+/* End GLobal Styles */
+
+.main-container {
+  min-height: 94vh;
+  align-items: flex-start;
+  justify-content:center;
+  background-color: rgb(196, 24, 24);
+  animation: 10s ease-in-out 0s infinite normal none running example;
+}
+
+@keyframes example{
+  0% {background-color: rgb(196, 24, 24);}
+  20% {background-color: rgb(239, 247, 18);}
+  40% {background-color: rgb(62, 213, 16);}
+  60% {background-color: rgb(63, 7, 98) ;}
+  80% {background-color: rgb(207, 9, 92);}
+  100% {background-color: rgb(32, 223, 223);}
+}
+
+.clock-container {
+  padding: 2rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+
+  background: linear-gradient(90deg, #37d607 0%, #3f0762 100%);
+}
+
+.current-time {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.alarm-form {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.submit-button {
+  border-color: black;
+  border: 10px;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+.set-alarm-container {
+  width: 100%;
+}
+
+.set-alarm-container .set-alarm-container-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.alarm {
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+.alarm .delete-alarm {
+  border-radius: 2rem;
+  background-color: rgba(35, 11, 252, 0.979);
+  font-weight: bold;
+  color: wheat;
+  font-size: xx-medium;
+}
+
+.time {
+  color: #0e141b;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btn:focus,
+.btn:hover {
+  box-shadow: rgb(247, 230, 4) 2px 2px 2px 1px inset, #fff -2px -2px 10px 1px inset;
+}
+
+.page-title {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  align-items: center;
+  text-align: center;
+  border-style: solid;
+  border-width: 3px;
+  color: rgb(0, 0, 0);
+}
+
+
+footer {
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  bottom: 0px;
+  line-height: 3vh;
+  padding: 5px;
+}
+
+/* style of devices of screen size less than 768px */
+@media only screen and (min-width: 600px) {
+  /* adding padding to container */
+  .main-container {
+    padding-block: 2rem;
+  }
+  .clock-container {
+    justify-content: center;
+    border-radius: 50px;
+    width: 450px;
+    min-height: auto;
+  }
+}
